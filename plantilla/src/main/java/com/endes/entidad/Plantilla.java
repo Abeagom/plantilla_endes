@@ -27,6 +27,11 @@ public class Plantilla {
         if (empleado == null) {
             throw new IllegalArgumentException("No se puede contratar un empleado nulo");
         }
+        for(Empleado e : empleados) {
+        	if(e.getDni().equals(empleado.getDni())) {
+                throw new IllegalArgumentException("El empleado con DNI " + empleado.getDni() +" ya está contratado");
+        	}
+        }
         empleados.add(empleado);
     }
 
