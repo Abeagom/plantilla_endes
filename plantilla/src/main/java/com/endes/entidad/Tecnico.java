@@ -2,6 +2,7 @@ package com.endes.entidad;
 /**
  * Clase que representa a un empleado de tipo Técnico.
  * El sueldo base se incrementa según la categoría del técnico.
+ * @author ABG
  */
 public class Tecnico extends Empleado {
     private int categoria;
